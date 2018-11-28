@@ -1,0 +1,21 @@
+<?php if ($error):?>
+    <p class="error"><?= $error; ?></p>
+<?php endif;?>
+
+<form method="post" action="login.php">
+
+    <p>
+        <label for="mail">Email</label>
+        <input type="mail" name="mail" id="mail" value="<?=$tab['mail']?>"> 
+    </p>
+    <p>
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" id="password" > 
+    </p>
+    <p>
+            <input type="submit" value="Envoyer">
+    </p>
+
+
+
+</form>
