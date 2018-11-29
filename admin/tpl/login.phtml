@@ -1,12 +1,12 @@
-<?php if ($error):?>
-    <p class="error"><?= $error; ?></p>
+<?php if ($erreur != ''):?>
+    <p class="error"><?= $erreur; ?></p>
 <?php endif;?>
 
 <form method="post" action="login.php">
 
     <p>
         <label for="mail">Email</label>
-        <input type="mail" name="mail" id="mail" value="<?=$tab['mail']?>"> 
+        <input type="mail" name="mail" id="mail"> 
     </p>
     <p>
         <label for="password">Mot de passe</label>

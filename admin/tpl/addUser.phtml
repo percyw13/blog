@@ -1,21 +1,21 @@
     
-<?php if ($error):?>
-    <p class="error"><?= $error; ?></p>
+<?php if ($erreur != ''):?>
+    <p class="error"><?= $erreur; ?></p>
 <?php endif;?>
 
-    <form method="post" action="addUser.php">
+    <form method="post" action="addUser.php" enctype="multipart/form-data">
 
         <p>
             <label for="name">Nom</label>
-            <input type="text" name="name" id="name" value="<?=$tab['name']?>">
+            <input type="text" name="name" id="name" value="<?=$values['name']?>">
         </p>
         <p>
             <label for="firstName">Prénom</label>
-            <input type="text" name="firstName" id="firstName" value="<?=$tab['firstName']?>">
+            <input type="text" name="firstName" id="firstName" value="<?=$values['firstName']?>">
         </p>
         <p>
             <label for="mail">Email</label>
-            <input type="mail" name="mail" id="mail" value="<?=$tab['mail']?>"> 
+            <input type="mail" name="mail" id="mail" value="<?=$values['mail']?>"> 
         </p>
         <p>
             <label for="password">Mot de passe</label>
@@ -28,15 +28,15 @@
     
         <p>
             <label for="bio">Bio</label>
-            <input type="text" name="bio" id="bio" value="<?=$tab['bio']?>">
+            <input type="text" name="bio" id="bio" value="<?=$values['bio']?>">
         </p>
         <p>
             <label for="avatar">Avatar</label>
-           <input type="text" name="avatar" id="avatar" value="<?=$tab['avatar']?>">
+           <input type="file" name="avatar" id="avatar" value="<?=$values['avatar']?>">
         </p>
         <p>
             <label for="userName">Pseudo</label>
-           <input type="text" name="userName" id="userName" value="<?=$tab['userName']?>">
+           <input type="text" name="userName" id="userName" value="<?=$values['userName']?>">
         </p>
         <p>
             <label for="role">Rôle</label>
